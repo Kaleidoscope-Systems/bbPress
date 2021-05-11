@@ -111,7 +111,9 @@ class BBP_Login_Widget extends WP_Widget {
 
 							<?php if ( ! empty( $settings['register'] ) ) : ?>
 
-								<a href="<?php echo esc_url( $settings['register'] ); ?>" title="<?php esc_attr_e( 'Register', 'bbpress' ); ?>" class="bbp-register-link"><?php esc_html_e( 'Register', 'bbpress' ); ?></a>
+								<form method="GET" action="<?php echo esc_url( $settings['register'] ); ?>">
+                                    <button type="submit">Register</button>
+                                </form>
 
 							<?php endif; ?>
 
