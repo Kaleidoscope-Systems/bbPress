@@ -112,7 +112,7 @@ class BBP_Login_Widget extends WP_Widget {
 							<?php if ( ! empty( $settings['register'] ) ) : ?>
 
 								<form method="GET" action="<?php echo esc_url( $settings['register'] ); ?>">
-                                    <button type="submit">Register</button>
+                                    <button class="button submit" type="submit">Register</button>
                                 </form>
 
 							<?php endif; ?>
