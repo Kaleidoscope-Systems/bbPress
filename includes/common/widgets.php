@@ -119,7 +119,9 @@ class BBP_Login_Widget extends WP_Widget {
 
 							<?php if ( ! empty( $settings['lostpass'] ) ) : ?>
 
-								<a href="<?php echo esc_url( $settings['lostpass'] ); ?>" title="<?php esc_attr_e( 'Lost Password', 'bbpress' ); ?>" class="bbp-lostpass-link"><?php esc_html_e( 'Lost Password', 'bbpress' ); ?></a>
+								<form method="GET" action="<?php echo esc_url( $settings['lostpass'] ); ?>">
+                                    <button class="button submit" type="submit">Reset Password</button>
+                                </form>
 
 							<?php endif; ?>
 
