@@ -14,11 +14,8 @@ defined( 'ABSPATH' ) || exit;
 
 <div id="bbpress-forums" class="bbpress-wrapper">
 
-	<div id="forum-introduction" style="margin-bottom: 20px;">
-		<h1>Forums</h1>
-		<h2>Welcome to the Antioch Fort Collins Forums!</h2>
-		Sign in or create a new account in the sidebar on the right. Once you have an account, ask your life group leader to add you to your group's forum.
-	</div>
+	<!-- 3883 is the ID of the /forums page. Change this number if you want to display content from a different page. -->
+	<?php echo get_post_field('post_content', 3883); ?>
 
 	<?php bbp_get_template_part( 'form', 'search' ); ?>
 
