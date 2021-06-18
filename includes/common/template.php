@@ -2609,7 +2609,7 @@ function bbp_logout_link( $redirect_to = '' ) {
 	function bbp_get_logout_link( $redirect_to = '' ) {
 
 		// Build the link
-		$link = '<a href="' . wp_logout_url( $redirect_to ) . '" class="button logout-link">' . esc_html__( 'Log Out', 'bbpress' ) . '</a>';
+		$link = '<a href="' . wp_logout_url( $redirect_to ) . '" class="button logout-link av_font_icon" data-av_icon="" data-av_iconfont="entypo-fontello">' . esc_html__( '  Log Out', 'bbpress' ) . '</a>';
 
 		// Filter & return
 		return apply_filters( 'bbp_get_logout_link', $link, $redirect_to );
