@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 <div id="bbpress-forums" class="bbpress-wrapper">
 
-	<!-- 3883 is the ID of the /forums page. Change this number if you want to display content from a different page. -->
+	<?php /* 3883 is the ID of the /forums page. Change this number if you want to display content from a different page. */ ?>
 	<?php echo get_post_field('post_content', 3883); ?>
 
 	<?php bbp_get_template_part( 'form', 'search' ); ?>
