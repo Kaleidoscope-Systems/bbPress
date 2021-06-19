@@ -19,7 +19,8 @@ defined( 'ABSPATH' ) || exit;
 	<?php do_action( 'bbp_template_before_user_wrapper' ); ?>
 
 	<div id="bbp-user-wrapper">
-
+	<?php /* Add a link to return to the forums */ ?>
+	<div id="bbp-forum-hatch-door" data-av_iconfont="entypo-fontello" data-av_icon=""><a href="/forums/"> Return to the forums</a></div>
 		<?php bbp_get_template_part( 'user', 'details' ); ?>
 
 		<div id="bbp-user-body">
