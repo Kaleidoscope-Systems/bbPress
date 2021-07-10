@@ -14,6 +14,11 @@ defined( 'ABSPATH' ) || exit;
 
 <div id="bbpress-forums" class="bbpress-wrapper">
 
+	<?php
+	/* 4109 is the ID of the /forums page. Change this number if you want to display content from a different page. */
+	//echo get_post_field('post_content', 4109);
+	?>
+
 	<?php bbp_breadcrumb(); ?>
 
 	<?php bbp_topic_subscription_link(); ?>
